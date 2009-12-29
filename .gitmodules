@@ -1,0 +1,6 @@
+[submodule "external/config"]
+	path = external/config
+	url = git@github.com:zeist/Z-Ruby-Config.git
+[submodule "external/tagreader"]
+	path = external/tagreader
+	url = git@github.com:zeist/Z-Tag-Reader.git
