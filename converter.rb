@@ -98,6 +98,9 @@ class Converter
 		wavfile = file[0..file.size-6]+".wav"
 
 		#Output File
+        if @tracknumber.size < 2
+          @tracknumber = "0" + @tracknumber
+        end
 		outfile = @folder + "/"+@tracknumber + " - " +@title
 
 		#Command line
