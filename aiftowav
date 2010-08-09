@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+Dir.foreach(".") { |file|\
+                    filename = file.split(".")[0]
+                    extension = file.split(".")[1]
+                    if(extension == "aif" || extension == "aiff")
+                      cmd = "sox \""+filename+"."+extension+"\" \""+filename+".wav\""
+                      result = `#{cmd}`
+                      puts result
+                    end
+                }
